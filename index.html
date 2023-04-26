@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular.min.js"></script>
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+    <script src="javascript/nlar.js"></script>
+    <title>About Me</title>
+</head>
+
+<body ng-app="myApp" ng-controller="myController">
+    <div class="container-fluid mt-4">
+        <div class="row">
+            <div class="col-12 text-center">
+                <p class="pt-3 abm needtoMask">Thông tin cá nhân</p><br><small
+                    class="text-muted needtoMask update mb-2">Sinh nhật: 25/01/2004</small>
+                <div class="jumbotron">
+                    <div class="avatar"><img src="https://scontent.fsgn2-6.fna.fbcdn.net/v/t39.30808-6/326115515_1383897029018048_5760570078664172432_n.jpg?_nc_cat=111&ccb=1-7&_nc_sid=09cbfe&_nc_ohc=9KKx6LEhCFYAX9a8Kei&_nc_ht=scontent.fsgn2-6.fna&oh=00_AfCq3NeazYBbJiNh0958mQMzIAb8Yo-wIWuNkkaTWzLyCw&oe=644D4641" class="img-fluid" alt="Avatar">
+                        <div class="avatar_layer"><svg id="Layer_a" data-name="Layer a"
+                                xmlns="http://www.w3.org/2000/svg" viewBox="0 0 202 202">
+                                <defs>
+                                    <style>
+                                        .cls-a {
+                                            fill: none;
+                                            stroke: #34a853;
+                                            stroke-miterlimit: 10;
+                                            stroke-width: 1.2px
+                                        }
+                                    </style>
+                                </defs>
+                                <circle class="cls-a" cx="101" cy="101" r="100" />
+                            </svg></div>
+                    </div>
+                    <div class="verify mt-2"><small class="roboto" style="font-size:14pt;color:#4bb969"><i
+                                class="ion-android-checkmark-circle"></i> verify</small></div>
+                    <div class="col-12">
+                        <h3 class="roboto name mt-3" style="font-weight:100;color:#4285f4">Vũ Duy Thái<span
+                                class="ion-ios-pulse"></span></h3>
+                        <p class="crush roboto">Description about me !</p>
+                        <hr>
+                        <div class="row">
+                            <div class="col-12 col-md-6">
+                                <h4 class="jobh4 p-1 mb-2">Sở thích</h4>
+                                <div class="job_content">
+                                    <p><span class="" style="font-size:15pt"></span> Đam mê ngủ, ăn, chơi</p>
+                                    <p><span class=""></span> Thích ở một mình và đi đây đi đó</p>
+                                    <p><span class=""></span>Thích chơi các bộ môn thể thao</p>
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-6">
+                                <h4 class="contacth4 p-1 mb-2">Thông tin liên lạc</h4>
+                                <div class="contact_content"><i class="fab fa-chrome text-muted"></i>
+                                    <p class="hovering"><span class="" style="font-size:15pt"></span>
+                                        Facebook: https://www.facebook.com/profile.php?id=100025269617175</p>
+                                    <p class="hovering"><span class=""></span>Email: thaiitkk2004@gmail.com</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row justify-content-center">
+                            <div class="col-10 col-md-4"><a class="btn btn-primary btn-block ctcme roboto"
+                                    style="color:#f4f4f4" data-toggle="modal" data-target="#exampleModal"><span
+                                        class="ion-ionic"></span> Liên hệ tôi</a></div>
+                            <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog"
+                                aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                <div class="modal-dialog" role="document">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h5 class="modal-title text-muted" id="exampleModalLabel">Nếu bạn đang quan tâm , hãy nhắn tin với mình nhé :))</h5>
+                                            <button type="button" class="close" data-dismiss="modal"
+                                                aria-label="Close"><span aria-hidden="true"
+                                                    class="pt-1 ion-ios-close"></span></button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <div class="container">
+                                                <div class="row justify-content-center">
+                                                    <div class="col-12"><span class="ion-ios-chatbubble text-info col-6"
+                                                            style="font-size:24pt"></span></div>
+                                                </div>
+                                                <div class="row justify-content-center"><a href="https://www.facebook.com/profile.php?id=100025269617175"
+                                                        target="_blank"
+                                                        class="btn btn-primary btn-block col-6 mb-3">Facebook</a>
+                                                </div>
+                                                <div class="row justify-content-center"><a href="https://zalo.me/0342637906"
+                                                        target="_blank"
+                                                        class="btn btn-info btn-block col-6 mb-3">Zalo</a></div>
+                                                <div class="row justify-content-center"><a
+                                                        class="btn btn-danger btn-block col-6 mb-3"
+                                                        ng-click="reverse2()">Gmail</a></div>
+                                                <div class="row justify-content-center"><code
+                                                        class="roboto col-6 mb-3 text-muted" ng-show="gmail"
+                                                        style="font-size:12pt;color:#f4f4f4">thaiitkk2004@gmail.com</code></div>
+                                                <div class="row justify-content-center"><a ng-click="reverse()"
+                                                        class="btn btn-success btn-block col-6 mb-3"
+                                                        style="color:#f3f3f3">SMS</a></div>
+                                                <div class="row justify-content-center"><code
+                                                        class="roboto col-6 py-2 text-muted" ng-show="phone"
+                                                        style="font-size:12pt">0342637906</code></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row text-center">
+            <h2 class="col-12 display-4 text-success ms">Hưng Yên quê tôi <span class="ion-bookmark mt-2"></span></h2>
+        </div>
+        <div class="row my-5">
+    
+        </div>
+        <div class="row mt-5 mb-4">
+            <div class="col-12">
+                <div class="row">
+                    <div class="img1 col-12 col-lg-4"><img src="https://img-cache.coccoc.com/image?url=https://upload.wikimedia.org/wikipedia/commons/b/ba/Th%C3%A0nh_Ph%E1%BB%91_H%C6%B0ng_Y%C3%AAn.jpg&f=w" class="img-fluid"></div>
+                    <div class="col-12 col-lg-8 py-2 py-lg-0 ulong">
+                        <h4 class="text-primary">Sơ qua về tỉnh Hưng Yên</h4>
+                        <hr>
+                        <p>Hưng Yên là một tỉnh nằm ở trung tâm đồng bằng sông Hồng, Việt Nam. Năm 2022, Hưng Yên là đơn vị hành chính Việt Nam có dân số khoảng 1.302.000 người, mật độ trung bình 1.389 người/km2, quy mô GRDP đạt 132.176 tỉ đồng, GRDP bình quân đầu người đạt 102,3 triệu đồng/ người tương ứng với 4.396 USD, tốc độ tăng trưởng GRDP trung bình hàng năm giai đoạn 2011-2020 trên 7,5%, Năm 2022 tăng 13,4% đứng thứ 5 toàn quốc.</p><small class="float-right text-danger">Thanks for watching <span
+                                class="ion-ios-heart ml-1"></span></small>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row mt-5 mb-4">
+            <div class="col-12">
+                <div class="row">
+                    <div class="img2 col-12 col-lg-4"><img src="https://file1.dangcongsan.vn/data/0/images/2021/08/18/duongntcd/van-mieu-hung-yen.jpg?dpi=150&quality=100&w=780" class="img-fluid"></div>
+                    <div class="col-12 col-lg-8 py-2 py-lg-0 ulang">
+                        <h4 class="text-primary">Văn hóa - Di tích lịch sử của Hưng Yên</h4>
+                        <hr>
+                        <p>Hưng Yên là một vùng đất văn hiến với hàng nghìn di tích quý báu đang được gìn giữ, là cốt lõi của bản sắc văn hóa dân tộc, mang niềm tự hào của người dân nơi đây. Những lớp trầm tích văn hóa đó đang trở thành nguồn tài nguyên nhân văn, để tạo lên sức sống mới.</p>
+                        <p>Tỉnh Hưng Yên có trên 1.200 di tích các loại trong đó có 165 di tích, cụm di tích xếp hạng cấp quốc gia, 214 di tích, cụm di tích xếp hạng cấp tỉnh. Các di tích chứa đựng nhiều di sản văn hóa vật thể như: hoành phi, câu đối, khánh thờ, sắc phong, hương án, long trụ, quy - hạc…Bên cạnh giá trị về lịch sử, văn hóa còn lưu giữ các giá trị về nghệ thuật kiến trúc, điêu khắc, mỹ thuật của Việt Nam trong nhiều giai đoạn lịch sử.</p>
+                        <p>Bề dày vùng văn hóa sông Hồng, còn lưu giữ trên 400 lễ hội, trong có nhiều lễ hội in đậm sắc thái nền văn minh lúa nước như: Lễ hội cầu mưa, lễ rước nước, kéo co…;Lễ hội Chử Đồng Tử - Tiên Dung - một lễ hội tình yêu độc đáo bậc nhất cả nước. Tỉnh Hưng Yên còn gìn giữ được hát ca trù, loại hình nghệ thuật được công nhận là di sản văn hóa phi vật thể cần được bảo vệ khẩn cấp của nhân loại; hát trống quân tại xã Dạ Trạch, huyện Khoái Châu được vinh danh là di sản văn hóa phi vật thể quốc gia.</p>
+
+                        <div></div><small class="float-right text-danger">Thanks for watching<span
+                                class="ion-ios-heart ml-1"></span></small>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row mt-5 mb-4">
+            <div class="col-12">
+                <div class="row">
+                    <div class="img2 col-12 col-lg-4"><img src="https://file1.dangcongsan.vn/data/0/images/2021/08/18/duongntcd/nhan-to-hung-yen-2-anh-the-duong.jpg?dpi=150&quality=100&w=780" class="img-fluid"></div>
+                    <div class="col-12 col-lg-8 py-2 py-lg-0 ulang">
+                        <h4 class="text-primary">Đặc sản ẩm thực : nhãn lồng Hưng Yên</h4>
+                        <hr>
+                        <p>Ở vùng đất này, giống nhãn lồng tiến vua được biết đến từ thế kỷ thứ XVI vẫn được người dân lưu truyền như một báu vật của quê hương. Trong cuốn Phủ biên tạp lục năm 1776, nhà bác học Lê Quý Đôn từng viết về trái nhãn lồng Hưng Yên “Mỗi lần bỏ vào miệng thì tận trong răng lưỡi đã nảy ra vị thơm tựa như nước thánh trời cho”.</p>
+                        <p>Từ xa xưa đến nay dòng sông Hồng, sông Luộc hàng năm bồi đắp cho Hưng Yên lượng phù sa mầu mỡ, kết tinh nên hương vị ngọt thơm cho trái nhãn lồng níu chân du khách mỗi mùa nhãn chín. Người dân xứ nhãn lồng luôn tự hào về loại sản vật quý này, không chỉ thơm ngon nức tiếng mà nhãn lồng Hưng Yên còn đáp ứng các tiêu chuẩn khắt khe về an toàn thực phẩm, để đến với các thị trường trong, ngoài nước.</p>
+                        <p>Những rặng nhãn lồng xanh tốt, sai trĩu quả bên những con đường, trong mỗi khu vườn hay trải dài trên những con đường dẫn về xóm nhỏ, tất cả đã hình thành nên nét độc đáo của miền quê Hưng Yên. Hiện nay đã phát triển thành một vùng hàng hoá lớn, hàng năm cho sản lượng cả vài chục ngàn tấn, đem lại nguồn thu hàng nghìn tỷ đồng mỗi năm.</p>
+
+                        <div></div><small class="float-right text-danger">Thanks for watching <span
+                                class="ion-ios-heart ml-1"></span></small>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row mt-5 mb-4">
+            <div class="col-12">
+                <div class="row">
+                    <div class="img2 col-12 col-lg-4"><img src="https://baohungyen.vn/file/4028eaa4679b32c401679c0c74382a7e/old_image/dataimages/201112/original/89676_Phoi-to.gif" class="img-fluid"></div>
+                    <div class="col-12 col-lg-8 py-2 py-lg-0 ulang">
+                        <h4 class="text-primary">Các làng nghề phong phú</h4>
+                        <hr>
+                        <h5><b>Nghề đan đó, rọ Thủ Sỹ</b></h5>
+                        <p>Nằm cách thành phố Hưng Yên khoảng 7km, xã Thủ Sỹ có 2 làng nổi tiếng với nghề đan đó, rọ có từ lâu đời là Nội Lăng và Tất Viên. Để đan được những chiếc đó đẹp, người thợ phải chọn nguyên liệu chính là tre, nứa già; sau đó, khéo léo vót, chẻ thành những thanh nan có chiều dài, kích cỡ khác nhau, tùy thuộc từng loại đó, rọ. Để đan thành những chiếc đó, rọ, người thợ lành nghề chỉ mất khoảng 1 giờ với các công đoạn: Chẻ, vót nan; dựng khung; đan vành, hom miệng, cạp thân, đuôi. Cuối cùng, người ta đặt chúng trên gác bếp để khói ám và lên màu nâu cánh gián, giúp sản phẩm đẹp và bền hơn.</p>
+
+                        <p> Ngày nay, sản phẩm đó, rọ của xã Thủ Sỹ không chỉ là nông cụ để người nông dân đánh bắt thủy sản mà còn là sản phẩm phục vụ thiết kế, trang trí nội thất được thị trường trong và ngoài nước ưa chuộng.</p>
+                        <h5><b>Làng nghề chạm bạc Huệ Lai</b></h5>
+                        <p>Làng nghề chạm bạc Huệ Lai (xã Phù Ủng, huyện Ân Thi) nổi tiếng với các sản phẩm trang sức như vòng, kiềng, hoa tai, nhẫn... Mỗi sản phẩm được tạo ra đòi hỏi sự thuần thục, tinh tế cùng kinh nghiệm lâu năm của người thợ. Đồ trang sức Huệ Lai không chỉ được thị trường trong nước ưa chuộng mà còn xuất khẩu sang Lào, Campuchia, Trung Quốc... Mặc dù mới được hình thành từ đầu thập niên 1990 nhưng làng nghề chạm bạc Huệ Lai đã nhanh chóng phát triển, mang lại cho các hộ dân thu nhập ổn định.</p>    
+                        <h5><b>Làng nghề đúc đồng Lộng Thượng</b></h5>
+                        <p>Làng nghề đúc đồng Lộng Thượng (xã Đại Đồng, huyện Văn Lâm) được hình thành từ thời Lý, nổi tiếng với các sản phẩm thờ cúng được đúc từ đồng như đỉnh, hạc, chân nến, lư hương, mâm bồng... Từ bàn tay tài hoa của người thợ, những hoa văn, đường nét chạm khắc tinh xảo hiện lên, tạo dấu ấn riêng cho sản phẩm, giúp làng nghề đúc đồng Lộng Thượng khẳng định uy tín trên thị trường trong và ngoài nước.</p>
+                        <h5><b>Làng nghề tương Bần</b></h5>
+                        <p>Nhắc đến Phố Hiến thì không thể bỏ qua món tương bần trứ danh dùng để tiến vua thời xưa. Làng nghề tương Bần Hưng Yên thuộc thị trấn Bần Yên Nhân, huyện Mỹ Hào. Đến với ngôi làng này bạn sẽ lạc vào khung cảnh ấn tượng của những chiếc chum lớn xếp ngay hàng thẳng lối. Trong đó chứa đựng thứ nước chấm khiến vạn người phải say mê.</p>
+                        <p>Tương Bần Hưng Yên được làm từ nếp cái hoa vàng, đỗ tương và muối. Trải qua các công đoạn tỉ mỉ từ nấu gạo nếp thành xôi sau đó làm mốc, ngả đỗ cho lên màu vàng đỏ cùng muối, phơi nắng. Tương ở đây có màu vàng như mật đặc trưng, vị ngọt thơm và khi ăn có cảm giác hơi ngậy. Chấm cùng rau muống, bánh đúc hay thịt luộc,... thì ngon hết sảy luôn.
+                        </p>
+
+                        <div></div><small class="float-right text-danger">Thanks for watching <span
+                                class="ion-ios-heart ml-1"></span></small>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row mt-5 mb-4">
+            <div class="col-12">
+                <div class="row">
+                    <div class="img2 col-12 col-lg-4"><img src="https://cdn.alongwalk.info/info/wp-content/uploads/2022/07/19001424/image-review-10-dia-diem-du-lich-hung-yen-1-ngay-khong-the-bo-lo-165813926326961.jpg" class="img-fluid"></div>
+                    <div class="col-12 col-lg-8 py-2 py-lg-0 ulang">
+                        <h4 class="text-primary">Du lịch Hưng Yên</h4>
+                        <hr>
+                        <h5><b>Khu đô thị sinh thái Ecopark – Khu du lịch Hưng Yên nổi tiếng nhất</b></h5>
+                        <p>Địa điểm du lịch Hưng Yên nổi tiếng không thể thiếu cái tên khu đô thị sinh thái Ecopark – nơi được mệnh danh là khu đô thị xanh cùng với hệ thống đảo nhân tạo phủ bóng cây xanh khổng lồ. Nằm tiếp giáp với ranh giới giữa Hưng Yên và thủ đô Hà Nội, khu đô thị sinh thái Ecopark là nơi an toàn để đến sau nhịp sống hối hả của trốn thành phố nhộn nhịp.</p>
+                        <p>Ecopark được bao bọc bởi sông Hồng và sông Đuống, do đó nó mang lại một cảm giác rất trong lành và dễ chịu cho khu vực đô thị này. Mặc dù tiếp giáp với trung tâm thành phố nhộn nhịp của Hà Nội, nhưng bầu không khí của khu đô thị sinh thái Ecopark dường như không bị ảnh hưởng bởi các loại khói bụi. Nhiệt độ trung bình ở đây luôn mát hơn khu vực nội thành từ 2-3 độ do được điều hòa bởi hệ thống hồ nước và cây xanh lớn.</p>
+                        <p>Đặc biệt là cây cầu vượt ở đây với hàng hoa giấy tím hai bên cầu nên nơi đây thu hút rất nhiều bạn trẻ dừng chân, chụp ảnh. Đến đây không chỉ giúp bạn thư giãn mà được hòa mình vào thiên nhiên, vui vẻ cùng nhau, giúp các thành viên thêm gắn bó hơn. Nếu bạn có dự định du lịch Hưng Yên 1 ngày thì chúng mình nghĩ đây là địa điểm không thể tuyệt vời hơn dành cho bạn.
+                        </p>
+                        <h5><b>Phố Hiến – Địa điểm du lịch Hưng Yên với nhiều nét hoài cổ</b></h5> 
+                        <p>Khi nói đến Hưng Yên thì không thể không nhắc đến phố Hiến. Nơi đây được xây dựng vào khoảng thế kỷ XIII và vẫn tồn tại cho đến ngày nay, phố Hiến được cho là còn lưu giữ nhiều giá trị lịch sử. Trước đây, phố Hiến là thương cảng sầm uất nhất của đất nước vào khoảng thế kỷ XVII – XVIII. Trải qua bao biến thiên lịch sử, phố Hiến ngày nay đã không còn bóng dáng của một thương cảng nổi tiếng nhưng giá trị văn hóa, những ngôi chùa cổ kính, những bức tượng Phật nghìn năm tuổi vẫn còn nguyên vẹn.
+                        </p>
+                        <p>Đến với địa điểm du lịch Hưng Yên Phố Hiến, du khách sẽ được chiêm ngưỡng những công trình kiến ​​trúc độc đáo, mọi đường nét trên khu phố đều mang nét hoài cổ đặc trưng riêng. Đặc biệt trong những ngày lễ hàng năm, rất nhiều lễ hội nổi tiếng được tổ chức tại đây, nổi bật nhất là các hoạt động lễ hội dân gian Phố Hiến được tổ chức vào tháng 3 âm lịch hàng năm với nhiều trò chơi dân gian phong phú. Nếu có dịp đến đây, bạn đừng quên ghé thăm Đông Đô Quảng Hội – Điện Bà Thiên Hậu bởi đây là một trong 16 di tích lịch sử thuộc di sản quốc gia đặc biệt của Phố Hiến.
+                        </p>
+                        <h5><b>Làng Nôm – khu quần thể làng cổ xưa nhất Việt Nam</b></h5>
+                        <p>Khu quần thể làng Nôm được xem là một trong những địa điểm du lịch Hưng Yên cổ xưa độc đáo. Nơi đây được mệnh danh là một trong những làng cổ nhất đồng bằng Bắc Bộ. Khi bạn đến với làng Nôm, bạn sẽ bắt gặp những hình ảnh làng quê quen thuộc như cây đa, bến nước, sân đình, mái tranh thấp thoáng xa xa… Dù trải qua bao gian khó, bao năm phát triển và những thay đổi nhưng nơi đây vẫn giữ được những nét đẹp thôn quê giản dị, đáng quý.</p>
+                        <p>Mọi kiến trúc tại Làng Nôm đều phủ đầy lớp rêu phong có niên đại hàng trăm năm. Đặc biệt, trong làng còn có chùa Nôm – một ngôi chùa tâm linh hiện đang lưu giữ hơn 100 pho tượng gốm sứ độc đáo.
+                        </p>
+
+                        <div style="color: rgb(195, 192, 255);">Cảm ơn mọi người đã quan tâm!</div><small class="float-right text-danger">Thanks for watching <span
+                                class="ion-ios-heart ml-1"></span></small>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js"
+        integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js"
+        integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js"
+        integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn"
+        crossorigin="anonymous"></script>
+    <script src="javascript/anm.js"></script>
+    <script src="javascript/cm.js"></script>
+    <script src="javascript/scrm.js"></script>
+    <script src="javascript/myscript.js"></script>
+</body>
+
+</html>
